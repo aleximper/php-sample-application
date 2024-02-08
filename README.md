@@ -12,13 +12,11 @@ Sample PHP applications that uses:
 * MariaDB/MySQL
 * PHP >= 7.1
 * Command line tools `make` & `wget`
+* Docker y Docker compose
 
 ## Setup
 
-1. Run `make` from project root.
-2. Create a 'sampleuser' MariaDB/MySQL account, by default, application is configured to use password 'samplepass'.
-3. Create the 'sample' database and load [sql/db.sql](/sql/db.sql).
-4. Configure Apache:
+1. Configure Apache file in etc folder:
 ```apache
 <VirtualHost *:80>
     ServerName %application.host.name%
@@ -36,3 +34,6 @@ Sample PHP applications that uses:
 ```
 
 You are all set, point your browser to http://%application.host.name%/
+
+2. Execute the comand `docker-compose up`
+3. test the app in http://localhost:8080
