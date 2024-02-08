@@ -1,0 +1,5 @@
+Makefile
+compose.phar
+sql
+*.yaml
+*.md

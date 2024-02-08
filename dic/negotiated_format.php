@@ -1,4 +1,5 @@
 <?php
+require 'vendor/autoload.php';
 
 /**
  * Returns the best negotiated format according to RFC 7231.
