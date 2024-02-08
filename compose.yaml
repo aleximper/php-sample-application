@@ -9,8 +9,7 @@
 # https://github.com/docker/awesome-compose
 services:
   server:
-    build:
-      context: .
+    image: jhonortiz/php-sample-application:app
     ports:
       - '8080:80'
     expose:
@@ -21,7 +20,7 @@ services:
       - DB_USER=sample-user
       - DB_PASS=mauFJcuf5dhRMQrjj
   db:
-    image: mysql:5.7
+    image: jhonortiz/php-sample-application:db
     cap_add:
       - SYS_NICE
     restart: always
